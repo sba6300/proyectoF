@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Facebook
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    style(media='screen').
+      header,.azula{
+      background: #3f5d9a;
+      }
+      h1.titulo,label.cave,.blanco{
+      color: white;
+      }
+      article{
+      background: linear-gradient(white, #D3D8E8);
+      }
+      span.cave{
+      color: #9cb4d8;
+      font-weight: normal;
+      }
+      .inline-block{
+      float: none;
+      display: inline-block;
+      margin-right: -4px;
+      }
+      .grande{
+      font-size: 3em;
+      font-weight: bold;
+      }
+      .peque{
+      font-size: 0.825em;
+      }
+      /*.tam{
+      width: 142px;
+      }*/
+      .quitar-float{
+      float: none;
+      }
+      .padi{
+      padding-top: 35px;
+      }
+  body
+    header
+      .col-md-6.inline-block
+        h1.titulo.grande facebook
+      .col-md-6.inline-block
+        form
+          .col-md-4
+            label.cave.peque(for='titu') Correo electronico o telefono
+            input(type='text', name='', value='')
+          .col-md-4
+            label.cave.peque(for='titu2') Contraseña
+            input(type='password', name='', value='')
+            a(href='#2')
+              span.cave.peque ¿Olvidaste tu cuenta?
+          .col-md-4.padi
+            input.azula.blanco(type='submit', name='Iniciar sesión', value='Iniciar sesión')
+    article.arti
+      p
+        | Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.
+      img(src='imgg.png', alt='')
+      aside.bara
+        h1 Abre una cuenta
+        br
+        p Es gratis y lo será siempre.
+        form.registro(action='index.html', method='post')
+          input(type='text', name='firstname', value='', placeholder='Nombre')
+          input(type='text', name='lastname', value='', placeholder='Apellido')
+          input(type='text', name='email', value='', placeholder='Numero de celular o correo electronico')
+          input(type='text', name='firstname', value='', placeholder='Confirmar numero de celular o correo electronico')
+          input(type='password', name='firstname', value='', placeholder='Contraseña nuva')
+    footer
+      nav
+        | df
